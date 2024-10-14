@@ -698,6 +698,9 @@ a{
     border-radius: 30px;
     font-weight: 500;
 }
+a .connectimg{
+    width: 14px;
+}
 .profile-footer{
     padding: 0 6% 30px;
 }
@@ -825,7 +828,6 @@ a{
 .profile-description .info-icon{
     width: 20px;
 }
-
 .main-content .profile-description{
     background: #fff;
     padding: 20px 4% 30px;
@@ -975,6 +977,26 @@ body{
 }
 .profile-main .profile-description span{
     cursor: pointer;
+}
+.signupparagraph{
+    font-size: 12px;
+}
+.signupparagraph a{
+    color: #045be6;
+    text-decoration: underline;
+}
+
+/* ----------Signin & Signup form ---------- */
+.form-group.success input{
+    border-color: #41db51
+}
+.form-group.error input{
+    border-color: #ff3860;
+}
+.form-group .error{
+    color: #ff3860;
+    font-size: 9px;
+    height: 13px;
 }
 
 /* ----------media query for small screen ---------- */
