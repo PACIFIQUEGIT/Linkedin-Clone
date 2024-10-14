@@ -89,19 +89,29 @@ const validateInputs = () => {
     const emailValue = email.value.trim();
     const passwordValue = password.value.trim();
 
+    let isValid = true;
+
     if(emailValue === "") {
         setError(email, "Email is required");
+        isValid = false;
     } else if (!isValidEmail(emailValue)){
         setError(email, "Provide a valid email address");
+        isValid = false;
     } else{
         setSuccess(email);
     }
 
     if(passwordValue === "") {
         setError(password, "Password is required");
+        isValid = false;
     } else if(passwordValue.length < 10){
         setError(password, "Password must be at least 10 character.");
+        isValid = false;
     } else{
         setSuccess(password);
+    }
+
+    if (isValid) {
+        window.location.href = 'home.html';
     }
 }
